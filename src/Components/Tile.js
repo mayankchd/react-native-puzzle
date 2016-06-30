@@ -4,7 +4,6 @@ import {
   View,
   StyleSheet,
   TouchableHighlight,
-  Animated,
 } from 'react-native';
 
 import { observer } from 'mobx-react/native';
@@ -33,13 +32,13 @@ class Tile extends Component {
 
   render() {
     return (
-      <TouchableHighlight onPress={this.props.onPress} underlayColor='#e3e3e3'>
-        <Animated.View style={styles.container}>
-          <Text style={styles.tile}>
-            {this.props.tile}
-          </Text>
-        </Animated.View>
-          </TouchableHighlight>
+      <TouchableHighlight onPress={this.props.onPress} underlayColor="#e3e3e3">
+        <View style={styles.container}>
+            <Text style={styles.tile}>
+              {this.props.tile}
+            </Text>
+          </View>
+        </TouchableHighlight>
     );
   }
 }

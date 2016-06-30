@@ -1,4 +1,4 @@
-import possibleMoves from '../Constants/possibleMoves';
+import possibleMoves from '../constants/possibleMoves';
 import { observable, computed, action, toJS } from "mobx";
 import shuffle from 'array-shuffle';
 

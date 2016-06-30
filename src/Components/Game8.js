@@ -4,15 +4,13 @@ import {
   StyleSheet,
 } from 'react-native';
 
-import Tile from './Tile';
-
 import { observer } from 'mobx-react/native';
 
-import BoardStore from '../Store/BoardStore';
+import Tile from './Tile';
+import BoardStore from '../stores/BoardStore';
 import BoardComponent from './BoardComponent';
 
 const board = new BoardStore();
-console.log(board.handleMove);
 
 @observer
 class Game8 extends Component {
